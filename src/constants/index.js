@@ -1,29 +1,32 @@
 import {
-    mobile,
-    backend,
-    creator,
-    web,
-    javascript,
-    typescript,
-    html,
-    css,
-    reactjs,
-    redux,
-    tailwind,
-    nodejs,
-    mongodb,
-    git,
-    figma,
-    docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
-    carrent,
-    jobit,
-    tripguide,
-    threejs,
-  } from "../assets";
+  mobile,
+  backend,
+  creator,
+  web,
+  javascript,
+  typescript,
+  html,
+  css,
+  reactjs,
+  redux,
+  tailwind,
+  nodejs,
+  mongodb,
+  git,
+  figma,
+  docker,
+  meta,
+  starbucks,
+  tesla,
+  shopify,
+  carrent,
+  jobit,
+  tripguide,
+  threejs,
+  cubee, 
+  hexagon,
+} from "../assets";
+
   
   export const navLinks = [
     {
@@ -54,8 +57,14 @@ import {
       icon: backend,
     },
     {
-      title: "Content Creator",
+      title: "Flutterflow developer",
       icon: creator,
+    }, {
+      title: "OOPS , FOP , C++ ",
+      icon: cubee,
+    }, {
+      title: "firebase",
+      icon: hexagon,
     },
   ];
   
