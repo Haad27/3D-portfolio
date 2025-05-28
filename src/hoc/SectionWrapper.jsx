@@ -2,7 +2,8 @@ import {motion} from "framer-motion"
 import { styles } from "../styles"
 import {staggerContainer} from "../utils/motion"
 
-
+// the purpose of this is to bring the working or containers to the middle rather than
+// far right of the screen and also to make the animation of the container
 export const SectionWrapper = (Component , idname) => 
   function HOC() {
     return (
