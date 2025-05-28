@@ -3,7 +3,7 @@ import { SectionWrapper } from "../hoc";
 import { technologies } from "../constants";
 import { styles } from "../styles";
 import { motion } from "framer-motion";
-import { textVariant } from "../utils/motion";
+import { fadeIn, textVariant } from "../utils/motion";
 
 const Tech = () => {
   return (
@@ -20,6 +20,8 @@ const Tech = () => {
           </div>
         ))}
       </div>
+
+      
     </>
   );
 };
