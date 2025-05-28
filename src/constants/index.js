@@ -14,8 +14,10 @@ import {
   mongodb,
   git,
   figma,
+  api,
   docker,
   meta,
+  data,
   starbucks,
   tesla,
   shopify,
@@ -45,26 +47,32 @@ import {
   
   const services = [
     {
-      title: "Web Developer",
+      title: "Web Developer (learning)",
       icon: web,
     },
     {
-      title: "React Native Developer",
+      title: "React Native Developer (learning)",
       icon: mobile,
     },
     {
-      title: "Backend Developer",
+      title: "Backend Developer (learning)",
       icon: backend,
     },
     {
       title: "Flutterflow developer",
       icon: creator,
     }, {
-      title: "OOPS , FOP , C++ ",
+      title: "OOPS, FOP, C++, Javascript, Python",
       icon: cubee,
     }, {
       title: "firebase",
       icon: hexagon,
+    },{
+      title: "MERN (learning)",
+      icon: data,
+    },{
+      title: "API",
+      icon: api,
     },
   ];
   
