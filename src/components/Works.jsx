@@ -8,7 +8,7 @@ import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
 // fixed: corrected function parameter structure
-const ProjectCard = ({ index, name, description, tags, image, source_code_link }) => {
+const ProjectCard = ({ index, name, bool, description, tags, image2, image, source_code_link, source_code }) => {
   return (
     //this motion makes the output comes one by one by animation with spring like property
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
@@ -27,25 +27,30 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
             alt={name}
             className="w-full h-full object-cover rounded-2xl" />
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
-            <div
-              onClick={() => window.open(source_code_link, "_blank")}
-              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
-             >
-              <img 
-              src = {github}
-              alt = "github"
-              className="w-1/2 h-1/2 object-contain"
-              />
-            </div> 
+
             {/* this will be live link if any  */}
+            {bool && (
+              <div
+                onClick={() => window.open(source_code_link, "_blank")}
+                className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+              >
+                <img
+                  src={github}
+                  alt="github"
+                  className="w-1/2 h-1/2 object-contain"
+                />
+              </div>
+            )}
+
+
             <div
-              onClick={() => window.open(source_code_link, "_blank")}
+              onClick={() => window.open(source_code, "_blank")}
               className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
-             >
-              <img 
-              src = {github}
-              alt = "github"
-              className="w-1/2 h-1/2 object-contain"
+            >
+              <img
+                src={image2}
+                alt="http"
+                className="w-1/2 h-1/2 object-contain"
               />
             </div>
           </div>

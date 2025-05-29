@@ -9,6 +9,8 @@ import close from "./close.svg";
 import data from "./data.png";
 import api from "./api.png";
 
+import python2 from "./tech/python2.png"; 
+import cpp from "./tech/cpp.png";
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
@@ -23,47 +25,76 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
+
+import mernn from "./company/mernn.png";
+import flutterflow from "./company/flutterflow.png";
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
+import html1 from "./company/html.png"
+import python1 from "./company/python1.png";
+import firebase from "./company/firebase.png";
 import tesla from "./company/tesla.png";
 
+import art from "./art.png";
+import food from "./food.png";
+import http from "./http.png";
+import awakening from "./awakening.png";
+import image from "./image.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import lib from "./lib.png";
 import cubee from "./cubee.png"; // or .svg
 import hexagon from "./hexagon.png";
+import keybaord from "./keybaord.png";
+import wordpress from "./wordpress.png";
+import school from "./school.png";
 export {
   logo,
   backend,
+  keybaord,
   creator,
+  school,
+  wordpress,
+  art,
   mobile,
   web,
   github,
   menu,
+  food,
   close,
+  python2,
+  http,
+  lib,
   css,
   data,
   docker,
   figma,
+  awakening,
   git,
+  mernn,
   html,
   api,
   javascript,
   mongodb,
   nodejs,
   reactjs,
+  image,
   redux,
   tailwind,
+  firebase,
   typescript,
   threejs,
   meta,
+  cpp,
   shopify,
-  starbucks,
+  python1,
+  flutterflow,
   tesla,
   carrent,
   jobit,
   tripguide,
+  html1,
   cubee,
   hexagon,
 };
