@@ -246,7 +246,7 @@ const projects = [
   {
     name: "Awakening",
     description:
-      "App-based platform that is a therapy app , it has daily habit tracker , chat for all the clients , daily task and much more .",
+      "App-based platform that is a therapy app , it has daily habit tracker , chat for all the clients , daily task and much more my first biggest porject.",
     tags: [
       {
         name: "Flutterflow",
@@ -314,7 +314,7 @@ const projects = [
   {
     name: "Art Store",
     description:
-"A Eccomerce buisness of selling art pieces build for a client ,it has all the products , sorted into section but its wokring is under process .",
+"An ecommerce business built for a client to sell art pieces, featuring all products sorted into sections for easy browsing. The platform’s core design is complete, but functionality and backend integration are still in progress.",
     tags: [
       {
         name: "Eccomerce",
@@ -330,7 +330,7 @@ const projects = [
   {
     name: "book reading application",
     description:
-"First year CS LAB project of a online book reader app .",
+"First year CS LAB project of a online book reader app.You can read any book in organanized way",
     tags: [
       {
         name: "CPP",
@@ -353,7 +353,7 @@ const projects = [
   {
     name: "Student Campus Portal",
     description:
-"First year CS  project of a Student Managment System for students in unvseristy .",
+"First year CS  project of a Student Managment System for students in unvseristy.",
     tags: [
       {
         name: "CPP",

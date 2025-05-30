@@ -27,9 +27,9 @@ const ExperienceCard = ({ experience }) => {
         <p className="text-secondary text-[16px] font-semibold" style={{ margin: 0 }}>
           {experience.company_name}
         </p>
-         {/* this is making all the doted points show bellow the compnay name 
+        {/* this is making all the doted points show bellow the compnay name 
          dynamically calling them  */}
-        <ul className = "mt-5 list-disc ml-5 space-y-2">
+        <ul className="mt-5 list-disc ml-5 space-y-2">
           {experience.points.map((point, index) => (
             <li key={`experience-point-${index}`} className="text-white-100 text-[14px] pl-1 tracking-wider">
               {point}
@@ -47,7 +47,12 @@ const ExperienceCard = ({ experience }) => {
 const Experience = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
+      <motion.div variants={textVariant()}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, margin: "-100px" }}
+        className="overflow-visible"
+      >
         <p className={styles.sectionSubText}>What I have done so far</p>
         <h2 className={styles.sectionHeadText}>My Journey.</h2>
       </motion.div>

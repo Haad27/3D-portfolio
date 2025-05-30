@@ -3,36 +3,43 @@ import { motion } from "framer-motion";
 import { github } from "../assets";
 import { projects } from "../constants";
 import { styles } from "../styles";
-
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
-// fixed: corrected function parameter structure
-const ProjectCard = ({ index, name, bool, description, tags, image2, image, source_code_link, source_code }) => {
+const ProjectCard = ({
+  index,
+  name,
+  bool,
+  description,
+  tags,
+  image2,
+  image,
+  source_code_link,
+  source_code,
+}) => {
   return (
-    //this motion makes the output comes one by one by animation with spring like property
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
-      {/* tilt is the one that makes on hover go all right and left */}
+    
+    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)} className="flex-1">
       <Tilt
-        options={
-          {
-            max: 45,
-            scale: 1,
-            speed: 450,
-          }
-        } className=" bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full">
-        <div className="relative w-full h-[230px]">
+        options={{
+          max: 45,
+          scale: 1,
+          speed: 450,
+        }}
+        className="bg-tertiary p-5 rounded-2xl w-full sm:w-[360px]"
+      >
+        <div className="relative w-full aspect-[16/9] sm:aspect-[4/3]">
           <img
             src={image}
             alt={name}
-            className="w-full h-full object-cover rounded-2xl" />
-          <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
-
-            {/* this will be live link if any  */}
+            className="w-full h-full object-cover rounded-2xl"
+          />
+          <div className="absolute inset-0 flex justify-end m-3 gap-2 card-img_hover">
             {bool && (
               <div
                 onClick={() => window.open(source_code_link, "_blank")}
-                className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+                className="black-gradient rounded-full flex justify-center items-center cursor-pointer
+             w-8 h-8 sm:w-10 sm:h-10"
               >
                 <img
                   src={github}
@@ -41,24 +48,25 @@ const ProjectCard = ({ index, name, bool, description, tags, image2, image, sour
                 />
               </div>
             )}
-
-
             <div
               onClick={() => window.open(source_code, "_blank")}
-              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+              className="black-gradient rounded-full flex justify-center items-center cursor-pointer
+             w-8 h-8 sm:w-10 sm:h-10"
             >
               <img
                 src={image2}
-                alt="http"
+                alt="live"
                 className="w-1/2 h-1/2 object-contain"
               />
             </div>
           </div>
         </div>
+
         <div className="mt-5">
-          <h3 className="text-white font-bold text-[24px]">{name}</h3>
+          <h3 className="text-white font-bold text-[20px] sm:text-[24px]">{name}</h3>
           <p className="mt-2 text-secondary text-[14px]">{description}</p>
         </div>
+
         <div className="mt-4 flex flex-wrap gap-2">
           {tags.map((tag) => (
             <p key={tag.name} className={`text-[14px] ${tag.color}`}>
@@ -73,14 +81,13 @@ const ProjectCard = ({ index, name, bool, description, tags, image2, image, sour
 
 const Works = () => {
   return (
-    // as we are wrapping this in sectionwrapper so w ehave to use a empty <> </> a empty fragment
     <>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>My Work</p>
         <h2 className={styles.sectionHeadText}>Projects.</h2>
       </motion.div>
-      <div className="w-full flex">
 
+      <div className="w-full flex">
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
@@ -93,9 +100,8 @@ const Works = () => {
         </motion.p>
       </div>
 
-      <div className="mt-20 flex flex-wrap gap-7">
+      <div className="mt-20 flex flex-wrap gap-7 justify-center">
         {projects.map((project, index) => (
-          //interm project so we can get the all porpertoes of it 
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div>

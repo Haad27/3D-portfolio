@@ -17,7 +17,7 @@ const Hero = () => {
         {/* this is reponsible for making the text all fancy and good */}
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>Hi, I'm <span className='text-[#915eff]'>Haad</span></h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>I am a university student in GIKI <br className='sm:block hidden' />the start of sophomore</p>
+          <p className={`${styles.heroSubText} mt-2 text-white-100`}>I am a university student in GIKI <br className='sm:block hidden' />the start of my sophomore</p>
         </div>
       </div>
 
