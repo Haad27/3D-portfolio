@@ -49,19 +49,34 @@ import hexagon from "./hexagon.png";
 import keybaord from "./keybaord.png";
 import wordpress from "./wordpress.png";
 import school from "./school.png";
+import head from "./head.png";
+import trophy from "./trophy.png"
+import badminton from "./badminton.png"
+import award from "./award.png"
+
+import bag from "./bag.png";
+import nationals from "./nationals.png";
+import second from "./second.png";
+import GIKI from "./GIKI.png"
 export {
+  GIKI,
   logo,
+  second,
+  bag,
+  nationals,
   backend,
   keybaord,
   creator,
   school,
   wordpress,
+  badminton,
   art,
   mobile,
   web,
   github,
   menu,
   food,
+  head,
   close,
   python2,
   http,
@@ -72,6 +87,7 @@ export {
   figma,
   awakening,
   git,
+  award,
   mernn,
   html,
   api,
@@ -93,6 +109,7 @@ export {
   tesla,
   carrent,
   jobit,
+  trophy,
   tripguide,
   html1,
   cubee,

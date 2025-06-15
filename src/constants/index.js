@@ -5,7 +5,14 @@ import {
   web,
   javascript,
   typescript,
+  
+  second,
+  bag,
+  nationals,
+  GIKI,
+
   lib,
+  award,
   html1,
   css,
   reactjs,
@@ -13,6 +20,7 @@ import {
   art,
   tailwind,
   nodejs,
+  trophy,
   school,
   mernn,
   mongodb,
@@ -24,9 +32,11 @@ import {
   firebase,
   api,
   flutterflow,
+  head,
   docker,
   wordpress,
   meta,
+  badminton,
   data,
   http,
   python1,
@@ -62,37 +72,38 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer (learning)",
-    icon: web,
+    title: "Student Council President in 2022 in college",
+    icon: head,
   },
   {
-    title: "React Native Developer (learning)",
-    icon: mobile,
+    title: "badminton All Pakistan Collages Winner 2023",
+    icon: trophy,
   },
   {
-    title: "Backend Developer (learning)",
-    icon: backend,
+    title: "Winner of Gujrawala Senior Officers Compition 2022 badminton solo",
+    icon: badminton,
   },
   {
-    title: "Flutterflow developer",
-    icon: creator,
+    title: "Winner and Runner up in Nowshera Chmapionship in solo and doubles held by SAMW 2021",
+    icon: award,
   },
   {
-    title: "OOPS, FOP, C++, Javascript, Python",
-    icon: cubee,
+    title: "Second position in my collage in matrix",
+    icon: second,
   },
   {
-    title: "firebase",
-    icon: hexagon,
+    title: "Played all pakistan National in bamdinton in 2021",
+    icon: nationals,
   },
   {
-    title: "MERN (learning)",
-    icon: data,
+    title: "Matrix from APS nowshera and FSCE from APS Gujrawala",
+    icon: bag,
   },
   {
-    title: "API",
-    icon: api,
+    title: "Currently in 2 Semester of GIKI Gulam Ishaq Khan Institude Of Engineering Sciences",
+    icon: GIKI,
   },
+  
 ];
 
 const technologies = [
@@ -229,7 +240,7 @@ const testimonials = [
       "Haad is good coder.He codes in his sleep as well.He writes logic like one drinks water or eats food.",
     name: "Shayyan Rizwan Yazdani",
     designation: "Student",
-    company: "of GIKI",
+    company: "GIKI",
     image: "https://media.licdn.com/dms/image/v2/D4D03AQEbAD08m3qFpg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1725453743709?e=1753920000&v=beta&t=z2eMj1AI6SOedkkSxqjef_Ani6_efTslu5nuyxAeoMM",
   },
   {
@@ -237,7 +248,7 @@ const testimonials = [
       "Your coding Is “Good”.",
     name: "Bilal Ali",
     designation: "Giki Member",
-    company: "Member of SAHB ",
+    company: "SAHB ",
     image: image,
   }
 ];

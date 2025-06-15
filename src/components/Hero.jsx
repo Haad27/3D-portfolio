@@ -17,7 +17,7 @@ const Hero = () => {
         {/* this is reponsible for making the text all fancy and good */}
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>Hi, I'm <span className='text-[#915eff]'>Haad</span></h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>I am a university student in GIKI <br className='sm:block hidden' />the start of my sophomore</p>
+          <p className={`${styles.heroSubText} mt-2 text-white-100`}>I am student in GIKI <br className='sm:block hidden' />this is  start of my sophomore</p>
         </div>
       </div>
 
@@ -26,7 +26,7 @@ const Hero = () => {
 
     {/* this is teh part that animates the dot moving up and down */}
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
-        <a href='#about'>
+        <a href='#work'>
           <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
             <motion.div
               animate={{
