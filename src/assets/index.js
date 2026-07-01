@@ -40,6 +40,7 @@ import food from "./food.png";
 import http from "./http.png";
 import awakening from "./awakening.png";
 import image from "./image.png";
+import three from "./three.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
@@ -56,17 +57,28 @@ import award from "./award.png"
 
 import bag from "./bag.png";
 import nationals from "./nationals.png";
-import second from "./second.png";
+import second from "./second.png"
+
+
+import p1 from "./p1.png";
+import p2 from "./p2.png";
 import GIKI from "./GIKI.png"
+import gsap from "./gsap.png"
+import haad from "./haad.jpg"
 export {
   GIKI,
   logo,
   second,
   bag,
+  p1,
+  p2,
+  three,
   nationals,
+  gsap,
   backend,
   keybaord,
   creator,
+  haad,
   school,
   wordpress,
   badminton,

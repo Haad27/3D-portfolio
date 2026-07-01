@@ -10,7 +10,7 @@ const ProjectCard = ({ index, name, bool, description, tags, image2, image, sour
   return (
     <motion.div
       variants={fadeIn("up", "spring", index * 0.5, 0.75)}
-      className="w-full p-2 sm:w-1/2 lg:w-1/3" // Shows 1 on mobile, 2 on tablet, 3 on desktop
+      className="w-full p-2"
     >
       <Tilt
         options={{ max: 45, scale: 1, speed: 450 }}
@@ -49,7 +49,7 @@ const ProjectCard = ({ index, name, bool, description, tags, image2, image, sour
 
 const Works = () => {
   return (
-    <div className="w-full px-4 mx-auto">
+    <>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>My Work</p>
         <h2 className={styles.sectionHeadText}>Projects</h2>
@@ -59,7 +59,7 @@ const Works = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-3 max-w-3xl"
       >
-        <p className="text-secondary text-xs sm:text-sm md:text-base leading-snug sm:leading-normal md:leading-relaxed break-words whitespace-normal overflow-visible word-break-break-all">
+        <p className="text-secondary text-[14px] leading-relaxed">
           Following projects showcase my skills and my development from where I
           am now and where I started. It includes my university projects and my
           own self-made projects. This is not about what great things I have
@@ -69,12 +69,13 @@ const Works = () => {
         </p>
       </motion.div>
 
-      <div className="flex flex-wrap -mx-2 mt-8">
+      <div className="mt-8 w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div>
-    </div>
+    </>
   );
 };
-export default SectionWrapper(Works, "");
+
+export default SectionWrapper(Works, "work");

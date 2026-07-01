@@ -3,7 +3,7 @@ import { Canvas } from '@react-three/fiber';
 import { OrbitControls, Preload, useGLTF } from '@react-three/drei';
 import CanvasLoader from '../Loader';
 
-// Component to load the 3D model of the computer
+// Renders the 3D computer model
 const Computers = ({ isMobile }) => {
   const computer = useGLTF('./desktop_pc/scene.gltf');
 
@@ -36,7 +36,7 @@ const ComputersCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-const mediaQuery = window.matchMedia('(max-width: 800px)');
+    const mediaQuery = window.matchMedia('(max-width: 800px)');
     setIsMobile(mediaQuery.matches);
 
     const handleMediaQueryChange = (event) => {
@@ -65,6 +65,5 @@ const mediaQuery = window.matchMedia('(max-width: 800px)');
     </Canvas>
   );
 };
-
 
 export default ComputersCanvas;

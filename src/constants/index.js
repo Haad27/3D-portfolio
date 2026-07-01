@@ -21,10 +21,13 @@ import {
   tailwind,
   nodejs,
   trophy,
+  gsap,
   school,
   mernn,
   mongodb,
   image,
+  p1,
+  p2,
   html,
   git,
   python2,
@@ -37,6 +40,7 @@ import {
   wordpress,
   meta,
   badminton,
+  three,
   data,
   http,
   python1,
@@ -51,6 +55,7 @@ import {
   awakening,
   cubee,
   food,
+  haad,
   hexagon,
   github,
 } from "../assets";
@@ -151,7 +156,7 @@ const technologies = [
   },
   {
     name: "MongoDB",
-    icon: mongodb,
+    icon: gsap,
   },
   {
     name: "Three JS",
@@ -219,17 +224,28 @@ const experiences = [
     ],
   },
   {
-    title: "MERN",
-    company_name: "Mongo - Express - React - Node-js",
-    icon: mernn,
-    iconBg: "#000000",
-    date: "Jan 2023 - Present",
+    title: "React Three Fibre",
+    company_name: "3D animated character - 3D icons",
+    icon: three,
+    iconBg: "white",
+    date: "may 2025 - Present",
     points: [
-      "Finally decided to start my MERN journey and get proficient in it and use all my summer to get strong grip on it.",
-      "This is the biggest project which uses REACT and REACT THREE for animation with other and more projects coming soon.",
-      "In the journey of learning Mongo, Express, React, and Node.",
-      "working on a few mern projects but want to add the mordern touch like in this website with react three and drei",
-      "This is till 2025-05-29, let's see what the future has in hand for us.",
+      "Finally decided to start my Frontend journey and get proficient in it and use all my summer to get strong grip on it.",
+      "This is the biggest project which uses REACT and REACT THREE for 3D interactive icons which is this wesbite and https://mediumseagreen-wolverine-934090.hostingersite.com/ (also mentioned in my projects).",
+      "currently learning React three and doing courses on it",
+    ],
+  },{
+    title: "GSAP",
+    company_name: "animation - scrolltriggers -masks",
+    icon: gsap,
+    iconBg: "#000000",
+    date: "Jun 2025 - Present",
+    points: [
+      "Along with React three also learning and working on GSAP responbile for animation , scroll triggers and much more",
+      "One of my big porjects that has heavy GSAP is https://lavenderblush-albatross-199600.hostingersite.com/  (also mentioned in my projects)",
+            "currently learning GSAP and doing courses on it as well",
+
+      "This is till 2025-07-17, let's see what the future has in hand for us.",
     ],
   },
 ];
@@ -254,6 +270,58 @@ const testimonials = [
 ];
 
 const projects = [
+  {
+    name: "Juice Zone",
+    description:
+      "3D animated wesbite for a juice company",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "GSAP",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Scroll Trigger",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: p1,
+    image2 : http,
+    bool : true,
+    source_code_link: "https://github.com/Haad27/GSAP-Project",
+    source_code: "http://lavenderblush-albatross-199600.hostingersite.com",
+  }, 
+  {
+    name: "PsyConnect",
+    description:
+      "3D animated wesbite for booking sessions",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "GSAP",
+        color: "green-text-gradient",
+      },
+      {
+        name: "React three",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: p2,
+    image2 : http,
+    bool : true,
+    source_code_link: "https://github.com/Haad27/PsyConnect",
+    source_code: "http://mediumseagreen-wolverine-934090.hostingersite.com",
+  }, 
+  
+  
+  
+  
   {
     name: "Awakening",
     description:
