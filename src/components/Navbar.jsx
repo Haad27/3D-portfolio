@@ -12,9 +12,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`${styles.paddingX
-        } w-full flex items-center py-5 fixed top-0 z-20 ${scrolled ? "bg-primary" : "bg-transparent"
-        }`}
+      className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 ${scrolled ? "bg-primary" : "bg-transparent"}`}
     >
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
         <Link
@@ -41,39 +39,41 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-        {/* this div is fro the purpose so when the screen size is call we  have the about work contavt go into nav bar possition */}
-        <div className="sm:hidden flex flex-1 justify-end items-center ">
-          <img
-            src={toggle ? close : menu}
-            alt="menu"
-            className="w-[28px] h-[28px] object-contain cursor-pointer"
-            onClick={() => setToggle(!toggle)}
-          />
-          <div className={`${!toggle ? "hidden " : "flex"} p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl `}>
-            {/* // coping the same ul  */}
-            {/* this part is for the display of about work contact in the above nav bar  in the mobile view when you opne the menu */}
-
-            <ul className="list-none flex justify-end items-start flex-col gap-4">
-              {navLinks.map((link) => (
-                // this part makes sure the colot changes as well hover over it 
-                <li
-                  key={link.id}
-                  className={`${active === link.title ? "text-white" : "text-secondary"} font-poppins font-medium cursor-pointer text-[16px]`}
-                  onClick={() => {
-                    setActive(link.title);
-                    setToggle(!toggle);
-                  }}
-                >
-                  <a href={`#${link.id}`}>
-                    {link.title}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
         </div>
-      </div>
+{/* Mobile Menu Toggle */}
+<div className="sm:hidden flex items-center">
+  <button
+    className="p-2"
+    onClick={() => setToggle(!toggle)}
+    aria-label="Toggle menu"
+  >
+    {toggle ? (
+      <img src={close} alt="close menu" className="w-6 h-6" />
+    ) : (
+      <img src={menu} alt="open menu" className="w-6 h-6" />
+    )}
+  </button>
+</div>
+{toggle && (
+  <div className="fixed inset-0 bg-[#090d22]/80 backdrop-blur-lg flex flex-col items-center justify-center sm:hidden z-40">
+    <ul className="flex flex-col space-y-6 text-center">
+      {navLinks.map((link) => (
+        <li key={link.id} className="text-white text-xl">
+          <a
+            href={`#${link.id}`}
+            onClick={() => {
+              setActive(link.title);
+              setToggle(false);
+            }}
+            className="hover:text-[#915eff]"
+          >
+            {link.title}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </div>
+)}
     </nav>
   );
 };

@@ -71,12 +71,20 @@ import {
 
 export const navLinks = [
   {
-    id: "about",
-    title: "About",
+    id: "journey",
+    title: "Journey",
   },
   {
-    id: "work",
-    title: "Work",
+    id: "projects",
+    title: "Projects",
+  },
+  {
+    id: "academic",
+    title: "Education",
+  },
+  {
+    id: "about",
+    title: "Extracurricular",
   },
   {
     id: "contact",
