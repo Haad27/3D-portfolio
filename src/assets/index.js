@@ -65,6 +65,21 @@ import p2 from "./p2.png";
 import GIKI from "./GIKI.png"
 import gsap from "./gsap.png"
 import haad from "./haad.jpg"
+import aws from "./tech/aws.png"
+import sql from "./tech/sql.png"
+import vectordatabase from "./tech/vectordatabase.png"
+import rag from "./tech/rag.png"
+import nextjs from "./tech/nextjs.png"
+import alJuthur from "./al-juthur/image.png"
+import alJuthurCopy from "./al-juthur/image copy.png"
+import alJuthurCopy2 from "./al-juthur/image copy 2.png"
+import alJuthurCopy3 from "./al-juthur/image copy 3.png"
+import alJuthurCopy4 from "./al-juthur/image copy 4.png"
+import bayyinahGift from "./bayyinah gift/image.png"
+import pinboard from "./pinboard/image.png"
+import quranHadithLookup from "./quran and hadith lookup/image.png"
+import ragCertificate from "./certificates/Coursera RAG-1.png"
+import r3fCertificate from "./certificates/React Three.jpg"
 export {
   GIKI,
   logo,
@@ -126,4 +141,19 @@ export {
   html1,
   cubee,
   hexagon,
+  aws,
+  sql,
+  vectordatabase,
+  rag,
+  nextjs,
+  alJuthur,
+  alJuthurCopy,
+  alJuthurCopy2,
+  alJuthurCopy3,
+  alJuthurCopy4,
+  bayyinahGift,
+  pinboard,
+  quranHadithLookup,
+  ragCertificate,
+  r3fCertificate,
 };

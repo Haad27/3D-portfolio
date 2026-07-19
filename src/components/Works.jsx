@@ -7,40 +7,65 @@ import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
 const ProjectCard = ({ index, name, bool, description, tags, image2, image, source_code_link, source_code }) => {
+  const handleCardClick = () => {
+    if (name === "Al Juthur") {
+      window.location.href = "/al-juthur";
+    } else {
+      window.open(source_code, "_blank");
+    }
+  };
+
   return (
     <motion.div
       variants={fadeIn("up", "spring", index * 0.5, 0.75)}
       className="w-full p-2"
     >
       <Tilt
-        options={{ max: 45, scale: 1, speed: 450 }}
-        className="bg-tertiary p-5 rounded-2xl w-full h-full"
+        options={{ max: 25, scale: 1.02, speed: 450 }}
+        className="bg-tertiary p-5 rounded-2xl w-full h-full cursor-pointer hover:bg-[#1a1f3d] transition-colors duration-300"
       >
-        <div className="relative w-full aspect-[16/9]">
-          <img src={image} alt={name} className="w-full h-full object-cover rounded-2xl" />
-          <div className="absolute inset-0 flex justify-end m-3 gap-2 card-img_hover">
-            {bool && (
-              <div onClick={() => window.open(source_code_link, "_blank")}
-                className="black-gradient rounded-full flex justify-center items-center cursor-pointer w-8 h-8 sm:w-10 sm:h-10">
-                <img src={github} alt="github" className="w-1/2 h-1/2 object-contain" />
+        <div 
+          onClick={handleCardClick}
+          className="w-full h-full flex flex-col justify-between"
+        >
+          <div>
+            <div className="relative w-full aspect-[16/9]">
+              <img src={image} alt={name} className="w-full h-full object-cover rounded-2xl" />
+              <div className="absolute inset-0 flex justify-end m-3 gap-2 card-img_hover">
+                {bool && (
+                  <div onClick={(e) => {
+                    e.stopPropagation();
+                    window.open(source_code_link, "_blank");
+                  }}
+                    className="black-gradient rounded-full flex justify-center items-center cursor-pointer w-8 h-8 sm:w-10 sm:h-10">
+                    <img src={github} alt="github" className="w-1/2 h-1/2 object-contain" />
+                  </div>
+                )}
+                <div onClick={(e) => {
+                  e.stopPropagation();
+                  if (name === "Al Juthur") {
+                    window.location.href = "/al-juthur";
+                  } else {
+                    window.open(source_code, "_blank");
+                  }
+                }}
+                  className="black-gradient rounded-full flex justify-center items-center cursor-pointer w-8 h-8 sm:w-10 sm:h-10">
+                  <img src={image2} alt="live" className="w-1/2 h-1/2 object-contain" />
+                </div>
               </div>
-            )}
-            <div onClick={() => window.open(source_code, "_blank")}
-              className="black-gradient rounded-full flex justify-center items-center cursor-pointer w-8 h-8 sm:w-10 sm:h-10">
-              <img src={image2} alt="live" className="w-1/2 h-1/2 object-contain" />
+            </div>
+
+            <div className="mt-5">
+              <h3 className="text-white font-bold text-[20px] sm:text-[24px]">{name}</h3>
+              <p className="mt-2 text-secondary text-[14px]">{description}</p>
             </div>
           </div>
-        </div>
 
-        <div className="mt-5">
-          <h3 className="text-white font-bold text-[20px] sm:text-[24px]">{name}</h3>
-          <p className="mt-2 text-secondary text-[14px]">{description}</p>
-        </div>
-
-        <div className="mt-4 flex flex-wrap gap-2">
-          {tags.map((tag) => (
-            <p key={tag.name} className={`text-[14px] ${tag.color}`}>#{tag.name}</p>
-          ))}
+          <div className="mt-4 flex flex-wrap gap-2">
+            {tags.map((tag) => (
+              <p key={tag.name} className={`text-[14px] ${tag.color}`}>#{tag.name}</p>
+            ))}
+          </div>
         </div>
       </Tilt>
     </motion.div>

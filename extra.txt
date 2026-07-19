@@ -1,0 +1,52 @@
+--- HERO SECTION ---
+Title: Student Status Update
+Before: "this is start of my sophomore"
+After: "currently in my third year"
+
+--- EDUCATION SECTION ---
+Before: "Currently in 2 Semester of GIKI Gulam Ishaq Khan Institude Of Engineering Sciences"
+After: "Currently in 5th Semester of GIKI Ghulam Ishaq Khan Institute Of Engineering Sciences"
+
+--- ADDED SKILLS (TECHNOLOGIES) ---
+1. Docker
+   Icon: docker
+2. SQL
+   Icon: data (Database icon)
+3. MongoDB (Fixed Icon)
+   Icon: mongodb (corrected from gsap)
+
+--- MY JOURNEY (EXPERIENCES) ---
+1. DSA & Problem Solving
+   - Company Name/Sub-category: Data Structures & Algorithms
+   - Icon: cpp
+   - Date: 2023 - Present
+   - Points:
+     * Mastered Data Structures and Algorithms (DSA) to strengthen core computer science concepts and problem-solving abilities.
+     * Solved numerous algorithmic challenges using advanced data structures like trees, graphs, hash maps, heaps, and dynamic programming.
+     * Focused on writing optimized, time and space-efficient code for complex computational problems.
+
+2. Database Management Systems
+   - Company Name/Sub-category: SQL & MongoDB
+   - Icon: mongodb
+   - Date: 2024 - Present
+   - Points:
+     * Learned both relational (SQL) and NoSQL (MongoDB) databases for efficient data modeling and scalable storage.
+     * Mastered SQL concepts including complex queries, joins, indexing, normalization, and relational schema design.
+     * Worked extensively with MongoDB, handling document-oriented storage, aggregation pipelines, and schema-less database design for modern full-stack web applications.
+
+3. DevOps & CI/CD
+   - Company Name/Sub-category: Ubuntu, Docker & Pipelines
+   - Icon: docker
+   - Date: 2024 - Present
+   - Points:
+     * Explored DevOps practices to streamline deployment workflows and maintain scalable infrastructure.
+     * Got hands-on experience working in Linux/Ubuntu environments, managing server configurations and terminal operations.
+     * Learned Docker for containerizing applications, creating reproducible environments across development and production.
+     * Implemented automated workflows using GitHub Pipelines and CI/CD pipelines for continuous integration and continuous deployment.
+
+--- MY WORK (PROJECTS) ---
+Added Project: Pinboard
+- Description: "A full stack online picture sharing platform where users can log in, upload pictures, view feeds, like, comment, and interact with other users' photos."
+- Live Site: https://pinboard-nextjs.vercel.app/
+- GitHub Repository: https://github.com/Nabeel-8090/pinboard-nextjs
+- Tags: NextJS (#nextjs), Fullstack (#fullstack), Social (#social)

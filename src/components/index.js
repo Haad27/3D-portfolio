@@ -7,6 +7,8 @@ import Experience from './Experience';
 import Works from './Works';
 import Feedbacks from './Feedbacks';
 import Contact from './Contact';
+import Preloader from './Preloader';
+import Academic from './Academic';
 
 export {
   Hero,
@@ -14,10 +16,11 @@ export {
   About,
   Tech,
   Experience,
-  
   Works,
   Feedbacks,
   Contact,
+  Preloader,
+  Academic,
   EarthCanvas, 
   BallCanvas, 
   ComputersCanvas, 

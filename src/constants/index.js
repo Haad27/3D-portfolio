@@ -58,6 +58,15 @@ import {
   haad,
   hexagon,
   github,
+  aws,
+  sql,
+  vectordatabase,
+  rag,
+  nextjs,
+  alJuthur,
+  bayyinahGift,
+  pinboard,
+  quranHadithLookup,
 } from "../assets";
 
 export const navLinks = [
@@ -77,24 +86,16 @@ export const navLinks = [
 
 const services = [
   {
+    title: "Currently in 5 Semester of GIKI Gulam Ishaq Khan Institude Of Engineering Sciences",
+    icon: GIKI,
+  },
+  {
     title: "Student Council President in 2022 in college",
     icon: head,
   },
   {
     title: "badminton All Pakistan Collages Winner 2023",
     icon: trophy,
-  },
-  {
-    title: "Winner of Gujrawala Senior Officers Compition 2022 badminton solo",
-    icon: badminton,
-  },
-  {
-    title: "Winner and Runner up in Nowshera Chmapionship in solo and doubles held by SAMW 2021",
-    icon: award,
-  },
-  {
-    title: "Second position in my collage in matrix",
-    icon: second,
   },
   {
     title: "Played all pakistan National in bamdinton in 2021",
@@ -104,148 +105,107 @@ const services = [
     title: "Matrix from APS nowshera and FSCE from APS Gujrawala",
     icon: bag,
   },
-  {
-    title: "Currently in 2 Semester of GIKI Gulam Ishaq Khan Institude Of Engineering Sciences",
-    icon: GIKI,
-  },
-  
 ];
 
 const technologies = [
-   {
-    name: "cpp",
-    icon: cpp,
+  {
+    name: "RAG",
+    icon: rag,
   },
-    {
+  {
     name: "python",
     icon: python2,
   },
-   {
-    name: "flutterflow",
-    icon: flutterflow,
-  },
-  
   {
-    name: "GITHUB",
-    icon: github,
-  },
-  {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
-  {
-    name: "JavaScript",
-    icon: javascript,
-  },
-
-  {
-    name: "React JS",
-    icon: reactjs,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
+    name: "Next JS",
+    icon: nextjs,
   },
   {
     name: "MongoDB",
-    icon: gsap,
+    icon: mongodb,
   },
   {
-    name: "Three JS",
-    icon: threejs,
+    name: "React Three Fiber",
+    icon: three,
   },
   {
-    name: "git",
-    icon: wordpress,
+    name: "Docker",
+    icon: docker,
   },
- 
- 
+  {
+    name: "AWS",
+    icon: aws,
+  },
+  {
+    name: "Vector Database",
+    icon: vectordatabase,
+  },
 ];
 
 const experiences = [
   {
-    title: "Python ",
-    company_name: "Start of my coding journey",
+    title: "Python, Kotlin & FlutterFlow",
+    company_name: "The beginning of my coding journey",
     icon: python1,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "2023",
     points: [
-      "Started my journey by learning Python during my college days—the moment I discovered my interest in software development and dreamed of starting my own startup.",
-      "Learned all the basics in Python, including FOP (Fundamentals of Programming), explored some Pandas libraries, and understood OOP concepts.",
-      "Started building projects to add real-world experience and finesse to my coding skills (all of this was before entering university).",
-      "One of the biggest projects I created was a personal assistant like Siri, using the SAPI Windows library to listen to audio commands and open any apps in Windows, search on Google or YouTube, or find anything you wanted.",
+      "Started programming with Python and learned the fundamentals of programming.",
+      "Explored Object Oriented Programming and built small projects to strengthen my skills.",
+      "Learned Kotlin and later moved to FlutterFlow where I built multiple mobile applications.",
+      "Gained hands on experience with APIs, UI design, and backend integration.",
     ],
   },
   {
-    title: "Start of Web Dev",
-    company_name: "HTML CSS JAVASCRIPT",
-    icon: html1,
+    title: "Joined GIKI",
+    company_name: "Building strong computer science fundamentals",
+    icon: GIKI,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "2024",
     points: [
-      "After learning Python, I moved on to HTML, then JavaScript, and finally CSS.",
-      "Built my first website—the feeling was out of this world.",
-      "Created a few other projects like a basic calculator.",
+      "Started my Software Engineering degree at GIKI.",
+      "Learned C++, Python, data structures, and Object Oriented Programming.",
+      "Built academic and personal projects to improve problem solving.",
+      "Developed a solid foundation in software engineering principles.",
     ],
   },
   {
-    title: "Flutterflow",
-    company_name: "Flutter",
-    icon: flutterflow,
+    title: "Web Development & Systems Limited Internship",
+    company_name: "Turning ideas into real products",
+    icon: mernn,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "2025",
     points: [
-      "Started with Kotlin and then moved on to learning FlutterFlow—dedicated over 6 months to mastering it.",
-      "Learned UI/UX design, how APIs work, and backend concepts. Built dozens of projects using FlutterFlow.",
-      "My biggest project was the AWAKENING app (https://awakeninget.com/), built entirely from scratch. I applied all the skills I had learned and developed it solo, including acquiring the domain and handling everything myself.",
-      "AWAKENING had more than 60 users. It was an amazing therapy app, but eventually I realized it was time to move on.",
-      "Other projects in FlutterFlow include ReadME (a book reading app), Grocies (like Uber Eats), YouTube clone, CarHangout, fitness app, Airbnb clone, arts & crafts app, budget tracker, notes app, weather app, and many more.",
-      "Participated in Mechatron at GIKI 2024 and built a student assistant app using FlutterFlow.",
+      "Completed an internship at Systems Limited and worked with modern web development tools.",
+      "Learned React, Next.js, React Three Fiber, Tailwind CSS, and frontend development.",
+      "Built responsive websites and full stack applications.",
+      "Improved teamwork, project structure, and industry development practices.",
     ],
   },
   {
-    title: "Firebase",
-    company_name: "app-deveopment",
-    icon: firebase,
-    iconBg: "#000000",
-    date: "Jan 2023 - Present",
+    title: "Cloud, DevOps & Databases",
+    company_name: "Expanding into scalable software engineering",
+    icon: docker,
+    iconBg: "#E6DEDD",
+    date: "2026",
     points: [
-      "Along with FlutterFlow, I used Firebase as the backend.",
-      "Learned how backend systems work, including how chats and images are stored.",
-      "All the above-mentioned projects are connected with Firebase.",
+      "Learned AWS, Docker, DevOps, Data Structures and Algorithms, and Database Management Systems.",
+      "Worked with SQL and MongoDB while building scalable backend applications.",
+      "Focused on writing clean, maintainable, and production ready code.",
+      "Explored modern deployment and cloud workflows.",
     ],
   },
   {
-    title: "React Three Fibre",
-    company_name: "3D animated character - 3D icons",
-    icon: three,
-    iconBg: "white",
-    date: "may 2025 - Present",
+    title: "Artificial Intelligence",
+    company_name: "Building intelligent applications",
+    icon: rag,
+    iconBg: "#383E56",
+    date: "Late 2026",
     points: [
-      "Finally decided to start my Frontend journey and get proficient in it and use all my summer to get strong grip on it.",
-      "This is the biggest project which uses REACT and REACT THREE for 3D interactive icons which is this wesbite and https://mediumseagreen-wolverine-934090.hostingersite.com/ (also mentioned in my projects).",
-      "currently learning React three and doing courses on it",
-    ],
-  },{
-    title: "GSAP",
-    company_name: "animation - scrolltriggers -masks",
-    icon: gsap,
-    iconBg: "#000000",
-    date: "Jun 2025 - Present",
-    points: [
-      "Along with React three also learning and working on GSAP responbile for animation , scroll triggers and much more",
-      "One of my big porjects that has heavy GSAP is https://lavenderblush-albatross-199600.hostingersite.com/  (also mentioned in my projects)",
-            "currently learning GSAP and doing courses on it as well",
-
-      "This is till 2025-07-17, let's see what the future has in hand for us.",
+      "Started learning Artificial Intelligence and Large Language Models.",
+      "Completed courses on Retrieval Augmented Generation.",
+      "Built a complete RAG system from scratch.",
+      "Explored Agentic AI and developed AI powered applications.",
     ],
   },
 ];
@@ -253,23 +213,65 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "Haad is good coder.He codes in his sleep as well.He writes logic like one drinks water or eats food.",
+      "Haad has an exceptional ability to grasp complex backend concepts quickly. Working with him on software architecture showed me how structured and clean his logical reasoning is.",
     name: "Shayyan Rizwan Yazdani",
-    designation: "Student",
+    designation: "Software Engineering Student",
     company: "GIKI",
     image: "https://media.licdn.com/dms/image/v2/D4D03AQEbAD08m3qFpg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1725453743709?e=1753920000&v=beta&t=z2eMj1AI6SOedkkSxqjef_Ani6_efTslu5nuyxAeoMM",
   },
   {
     testimonial:
-      "Your coding Is “Good”.",
+      "Collaborating on web projects, Haad demonstrated a strong work ethic. He pays close attention to detail, styling animations, and layout flows to build interactive frontend products.",
     name: "Bilal Ali",
-    designation: "Giki Member",
-    company: "SAHB ",
+    designation: "Software Developer",
+    company: "SAHB",
     image: image,
   }
 ];
 
 const projects = [
+  {
+    name: "Al Juthur",
+    description:
+      "A production-grade Islamic learning app currently in prototype. It features 120+ Tafsirs, 9+ classical lexicons in English and Arabic, a translation model to translate Arabic Tafsir to English, and a RAG model to answer questions based on classical scholars' reflections.",
+    tags: [
+      {
+        name: "rag",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "100 plus tafsir",
+        color: "green-text-gradient",
+      },
+      {
+        name: "7 plus lexicon",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: alJuthur,
+    image2 : http,
+    bool : false,
+    source_code: "/al-juthur",
+  },
+  {
+    name: "Quran & Hadith Lookup",
+    description:
+      "A web application that automatically fetches and displays Quranic verses with Arabic text when typing a reference. It includes all Quranic surahs, Hadith collections, and cool Islamic shortcuts. For Windows and Mac.",
+    tags: [
+      {
+        name: "windows and mac application",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "shortcuts",
+        color: "green-text-gradient",
+      },
+    ],
+    image: quranHadithLookup,
+    image2 : http,
+    bool : false,
+    source_code: "https://quran-hadith-lookup-shortcuts.onrender.com/",
+  },
   {
     name: "Juice Zone",
     description:
@@ -293,7 +295,40 @@ const projects = [
     bool : true,
     source_code_link: "https://github.com/Haad27/GSAP-Project",
     source_code: "http://lavenderblush-albatross-199600.hostingersite.com",
-  }, 
+  },
+  {
+    name: "Pinboard",
+    description:
+      "A full-stack online picture sharing platform built using SQL, Next.js, Prisma, and Express for our DBMS 4th semester project.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "sql-prisma",
+        color: "green-text-gradient",
+      },
+      {
+        name: "express-node",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: pinboard,
+    image2 : http,
+    bool : false,
+    source_code: "https://pinboard-nextjs.vercel.app/",
+  },
+  {
+    name: "Bayyinah Gift",
+    description:
+      "Connects those who want to share their Bayyinah membership with those who want to receive and create matches in FIFO order.",
+    tags: [],
+    image: bayyinahGift,
+    image2 : http,
+    bool : false,
+    source_code: "https://bayyinah-sibscription-gift.vercel.app/",
+  },
   {
     name: "PsyConnect",
     description:
@@ -317,11 +352,7 @@ const projects = [
     bool : true,
     source_code_link: "https://github.com/Haad27/PsyConnect",
     source_code: "http://mediumseagreen-wolverine-934090.hostingersite.com",
-  }, 
-  
-  
-  
-  
+  },
   {
     name: "Awakening",
     description:
@@ -345,112 +376,6 @@ const projects = [
     bool : true,
     source_code_link: "https://github.com/Haad27/Awakening",
     source_code: "https://awakeninget.com/",
-  },
-  {
-    name: "Tasteat Restaurant",
-    description:
-      "Web application that enables users to search for dishes menu and place order in this Restaurant make this for a client.",
-    tags: [
-      {
-        name: "Wordpress",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Hostinger",
-        color: "green-text-gradient",
-      },
-      
-    ],
-    bool : false ,
-    image: food,
-        image2 : http,
-
-    source_code: "https://khaki-chicken-amq4nqqpg2ua7djv.builder-preview.com/",
-  },
-  {
-    name: "Type Verse",
-    description:
-"A second semester final CS project 'Typeverse' where you can compete with friends to see who has a higher typing speed, or practice solo to improve your own. All data is updated and there's a proper leaderboard.",
-    tags: [
-      {
-        name: "CPP",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "OOPS",
-        color: "green-text-gradient",
-      },
-      {
-        name: "FOPS",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: keybaord,
-    image2 : github,
-    bool : false,
-    source_code: "https://github.com/Haad27/Typeverse",
-  },
-  {
-    name: "Art Store",
-    description:
-"An ecommerce business built for a client to sell art pieces, featuring all products sorted into sections for easy browsing. The platform’s core design is complete, but functionality and backend integration are still in progress.",
-    tags: [
-      {
-        name: "Eccomerce",
-        color: "blue-text-gradient",
-      },
-      
-    ],
-    image: art,
-    image2 : http,
-    bool : false,
-    source_code: "https://art-collection-yg2jmnp758s10q0v.builder-preview.com/",
-  },
-  {
-    name: "book reading application",
-    description:
-"First year CS LAB project of a online book reader app.You can read any book in organanized way",
-    tags: [
-      {
-        name: "CPP",
-        color: "blue-text-gradient",
-      },{
-        name: "File handling",
-        color: "green-text-gradient",
-      },
-      {
-        name: "UX/UI",
-        color: "pink-text-gradient",
-      },
-      
-    ],
-    image: lib,
-    image2 : github,
-    bool : false,
-    source_code: "http://github.com/Haad27/GIKI-First-seminter--After-Mids/tree/main/library%20CS%20LAB%20PROJECT",
-  },
-  {
-    name: "Student Campus Portal",
-    description:
-"First year CS  project of a Student Managment System for students in unvseristy.",
-    tags: [
-      {
-        name: "CPP",
-        color: "blue-text-gradient",
-      },{
-        name: "File handling",
-        color: "green-text-gradient",
-      },
-      {
-        name: "error handling",
-        color: "pink-text-gradient",
-      },
-      
-    ],
-    image: school,
-    image2 : github,
-    bool : false,
-    source_code: "https://github.com/Haad27/Student-Campus-Portel",
   },
 ];
 
