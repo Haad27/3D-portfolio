@@ -38,7 +38,7 @@ const Hero = () => {
         </div>
 
         <div>
-          <h1 className={`${styles.heroHeadText} text-white`}>
+          <h1 className={`${styles.heroHeadText} text-white relative z-10`}>
             Hi, I'm <span className='text-[#915eff]'>Haad</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
@@ -106,7 +106,7 @@ const Hero = () => {
               <path strokeLinecap="round" strokeLinejoin="round" d="M7 8L4 11l3 3M17 8l3 3-3 3" />
             </svg>
           </motion.div>
-          <span className="text-[#915eff] text-[9.5px] font-bold tracking-widest uppercase bg-black/55 px-3 py-1.5 rounded-full border border-[#915eff]/20 backdrop-blur-[3px] shadow-lg">
+          <span className="text-[#915eff] text-[9.5px] font-bold tracking-widest uppercase">
             Drag to rotate PC
           </span>
         </div>

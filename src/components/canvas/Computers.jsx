@@ -32,7 +32,7 @@ const Computers = ({ width }) => {
 
   return (
     <mesh ref={meshRef}>
-      <hemisphereLight intensity={0.35} groundColor="gray" />
+      <ambientLight intensity={0.35} />
       <pointLight intensity={0.15} />
       <spotLight
         position={[-20, 50, 10]}
